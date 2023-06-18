@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Star Wars API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+    }
+
+    .input-container input {
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    .movie-details {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Star Wars API</h1>
+  <div class="input-container">
+    <input type="text" id="movieInput" placeholder="Enter a movie ID or title for this API to work">
+    <button class="button" onclick="getMovieDetails()">Get Movie Details</button>
+  </div>
+  <div class="movie-details" id="movieDetails"></div>
+
+  <script src="starwars.js"></script>
+</body>
+</html>
